@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+.login-wrapper{
+  width:100%;
+  height:100%;
+  font-family:"segoe UI";
+  font-size:14px;
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVL0z22GfgJFZMdBIOYoRmwMhu139_JtAzt5drHpwuge4Q9BYvvw');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.login-header{
+    text-align: center;
+    margin-top:10px;
+}
+.login-panel{
+    display:block;
+    width:300px;
+    position:absolute;
+    top:30%;
+    left:75%;
+    padding:0px 10px 10px 10px;
+    background-color:#0099cc;
+    border-radius:10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
+    color:white;
+    transform: translate(-75%,-50%);
+    
+}
+
+.login-control{
+    margin-top:4px;
+  padding:4px;
+  width:100%;
+  border-radius:8px;
+  border: 2px solid #929699;
+  box-shadow: 0px 4px 10px 10px rbga(14, 20, 25, 0.10);
+}
+
+.login-button{
+    
+}
