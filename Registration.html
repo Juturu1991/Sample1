@@ -4,6 +4,9 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="Registration.css" />
+
+  <script src="registration.js"></script>
+  
 </head>
 
 <body>
@@ -13,22 +16,22 @@
         <h1 class="register-hearder">JVK1991</h1>
         <br />
         <label class="title">First Name:</label>
-        <input type="text" class="register-control" />
+        <input type="text" class="register-control" id="txtFName" />
       </div>
       <div class="register-control-group">
         <label>Last Name:</label>
-        <input type="text" class="register-control" />
+        <input type="text" class="register-control" id="txtLName" />
       </div>
       <div class="register-control-group">
         <label>Email address:</label>
-        <input type="text" class="register-control" />
+        <input type="text" class="register-control" id="txtEmail" />
       </div>
       <div class="register-control-group">
         <label>Password:</label>
-        <input type="password" class="register-control" />
+        <input type="password" class="register-control" id="txtPass"/>
       </div>
       <div class="register-control-group text-right">
-        <button class="register-button">Create Your Account</button>
+        <button class="register-button" id="btnCreate">Create Your Account</button>
         <p class="register-terms">By signing up, you agree to our Terms, Data Policy and Cookies Policy.</p>
 
         <div class="register-login">
@@ -39,6 +42,8 @@
       </div>
     </div>
   </div>
+
+ 
 </body>
 
 </html>
