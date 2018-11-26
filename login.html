@@ -7,19 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="login.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="login.js"></script>
 </head>
 
 <body>
     <div class="login-wrapper">
+            <div class="jvk">
+                    <!----<h1 class="products">Sample Products</h1>
+                    <h4 class="terms-header">General Terms:</h4>
+                    <p class="terms-paragraph">
+                            1. Ensure your app is stable and easily navigable. For example, verify that you have integrated Login correctly. <br/>Your app shouldn’t crash or hang during the testing process.<br/>
+                            2. Don't confuse, deceive, defraud, mislead, or harass anyone.<br/>
+                            3. Be transparent about your identity and your app's identity.<br/>
+                            4. Don't use the Instagram Platform for any app that constitutes, promotes or is used in connection with spyware, adware, <br/>or any other malicious programs or code.<br/>
+                            5. Don't store or cache Instagram login credentials.</p>-->
+                </div>
         <div class="login-panel">
             <h1 class="login-header">Login</h1>
             <div class=login-control-group>
                 <label class="login-Email-address">Email address:</label>
-                <input type="text" class="login-control" />
+                <input type="text" class="login-control" id="txtEmail"/>
                 <label class="login-password">Password:</label>
-                <input type="password" class="login-control" />
-                <button class="login-button">Login</button>
+                <input type="password" class="login-control" id = 'txtPassword' />
+                <div class="error">
+                    
+                </div>
+                <a class="login-button" href="#" id="btnLogin">Login</a>
+
             </div>
+
+            <div class ="new-account">
+                <label class="not-have-account">Don't have an account?</label>
+                <a class="signup" href="Registration.html   ">sign up</a>
+            </div>
+
         </div>
     </div>
 </body>

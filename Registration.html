@@ -11,6 +11,7 @@
   crossorigin="anonymous"></script>
   
   <script src="registration.js"></script>
+  <title>Registration</title>
 
 </head>
 
@@ -18,27 +19,28 @@
   <div class="register-wrapper">
     <div class="register-panel">
       <div class="register-control-group">
-        <h1 class="register-hearder">JVK1991</h1>
+        <h1 class="register-hearder">Registration</h1>
         <br />
         <label class="title">First Name:</label>
-        <input type="text" class="register-control" id="txtFName" />
+        <input type="text" class="register-control" id="txtFName" placeholder="First Name" />
       </div>
       <div class="register-control-group">
         <label>Last Name:</label>
-        <input type="text" class="register-control" id="txtLName" />
+        <input type="text" class="register-control" id="txtLName" placeholder="Last Name" />
       </div>
       <div class="register-control-group">
         <label>Email address:</label>
-        <input type="text" class="register-control" id="txtEmail" />
+        <input type="text" class="register-control" id="txtEmail" placeholder="Email address" />
       </div>
       <div class="register-control-group">
         <label>Password:</label>
-        <input type="password" class="register-control" id="txtPass"/>
+        <input type="password" class="register-control" id="txtPass" placeholder="Password"/>
       </div>
+      <div class="error"></div>
       <div class="register-control-group text-right">
         <button class="register-button" id="btnCreate">Create Your Account</button>
         <p class="register-terms">By signing up, you agree to our Terms, Data Policy and Cookies Policy.</p>
-
+        
         <div class="register-login">
           <label class="secondary">Have an account?</label>
           <a class="login-link" href="login.html">Log in </a>

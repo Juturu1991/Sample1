@@ -13,7 +13,7 @@ html,body{
   height:100%;
   font-family:"segoe UI";
   font-size:14px;
-  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVL0z22GfgJFZMdBIOYoRmwMhu139_JtAzt5drHpwuge4Q9BYvvw');
+  background-image:url('https://i0.wp.com/www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-background-for-website-in-light-color-1-1024x640.jpg?ssl=1');
   background-repeat:no-repeat;
   background-size:cover;
 }
@@ -21,6 +21,28 @@ html,body{
     text-align: center;
     margin-top:10px;
 }
+
+.jvk{
+    position: absolute;
+    top:4%;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+    padding: 0px 0px 0px 15px;
+    margin-top: 10px 0px 2px 0px;
+    color:darkolivegreen;
+}
+
+.terms-header{
+    font-size: 40px;
+}
+
+.terms-paragraph{
+    font-size:20px;
+    text-align: justify;
+    color:black;
+    margin-top:-30px; 
+}
+
 .login-panel{
     display:block;
     width:300px;
@@ -28,23 +50,66 @@ html,body{
     top:30%;
     left:75%;
     padding:0px 10px 10px 10px;
-    background-color:#0099cc;
+    background-color:#ffffff;
     border-radius:10px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
-    color:white;
+    color:rgb(0, 0, 0);
     transform: translate(-75%,-50%);
     
+    
+}
+
+.error{
+    display:none;
+    color:rgb(255, 0, 0);
 }
 
 .login-control{
     margin-top:4px;
-  padding:4px;
-  width:100%;
-  border-radius:8px;
-  border: 2px solid #929699;
-  box-shadow: 0px 4px 10px 10px rbga(14, 20, 25, 0.10);
+    margin-bottom: 10px;
+    padding:8px 4px 8px 4px;
+    width:100%;
+    border-radius:2px;
+    border: 2px solid #929699;
+    box-shadow: 0px 4px 4px 4px rbga(14, 20, 25, 0.10);
 }
 
 .login-button{
+    display: inline-block;
+    border: 0px solid #eee;
+    background: #0084ff;
+    padding: 8px 10px 10px 8px;
+    width:100%;
+    border-radius:4px;
+    cursor:pointer;
+    color:white;
+    font-family:segoe UI;
+    font-size:16px;
+    cursor: pointer;
+    margin: 10px 10px 16px 0px;
+    text-decoration: none;
+    text-align: center;
     
+}
+.login-button:hover{
+    background-color: rgba(18, 88, 192, 0.78);
+}
+
+.new-account{
+    position:absolute;
+    top:120%;
+    left:0%;
+    margin-top:-20px;
+    width: 300px;
+    padding:20px 20px 20px 20px;
+    background-color:#ffffff;
+    border-radius:10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+.signup{
+    text-decoration: none;
+    color:hsl(241, 100%, 40%);  
 }

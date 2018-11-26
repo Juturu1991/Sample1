@@ -1,0 +1,25 @@
+<!DOCTYPE html/>
+<html>
+
+<head>
+    <title>Home</title>
+</head>
+<script>
+    var name = (new URL(document.location)).searchParams.get('name');
+    var time = (new URL(document.location)).searchParams.get('time');
+
+    window.onload = function () {
+
+        document.getElementById('lblWelcome').innerHTML = "Hi, " + name + "<br/> <small>Login Time:  " + time +
+            "</small>";
+    }
+</script>
+
+<body>
+    <h1 id="lblWelcome">
+
+    </h1>
+
+</body>
+
+</html>

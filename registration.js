@@ -13,46 +13,69 @@ Pure JS
 //})
 
 //Jquery Wrapper w/o doc ready
-$(function(){
+$(function () {
     $('#btnCreate').click(register);
 });
 
 var register = function () {
-
+    //$(".error").html('');
+    $(".error").hide();
+    $(".error").empty();
     var _fName = $('#txtFName').val(); //document.getElementById('txtFName');
     var _lName = $('#txtLName').val(); //document.getElementById('txtLName');
-    var _pass = $('#txtPass').val(); //document.getElementById('txtPass');
     var _email = $('#txtEmail').val(); //document.getElementById('txtEmail');
+    var _pass = $('#txtPass').val(); //document.getElementById('txtPass');
 
     if (_fName.trim() == "") {
-        alert("Please fill first name");
+        //alert("Please provide first name");
+        $(".error").html("Please provide first name");
+        $(".error").show();
         return;
     }
 
     if (_lName.trim() == "") {
-        alert("Please fill last name");
+        //alert("Please provide last name");
+        $(".error").html("Please provide last name");
+        $(".error").show();
         return;
     }
 
+    if(_email.trim() == ""){
+        $(".error").html("Please provide Email address");
+        $(".error").show();
+        return;
+    }
+    else{
+    if (!/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(_email)) {
+        //alert("Email not valid");
+        $(".error").html("Email not valid");
+        $(".error").show();
+        return;
+    }
+}
+
     if (_pass == "") {
-        alert("Please pass3ord");
+        //alert("Please provide password");
+        $(".error").html("Please provide password");
+        $(".error").show();
         return;
     } else {
-        if (_pass.length < 7) {
-            alert("Password too short");
+        if (!/\d/.test(_pass)) {
+            //alert('Atleast a number');
+            $(".error").html("Provide atleast a number");
+            $(".error").show();
             return;
         } else {
-            if (!/\d/.test(_pass)) {
-                alert('Atleast number');
+            if (_pass.length < 7) {
+                //alert("Password too short");
+                $(".error").html("Password too short");
+                $(".error").show();
                 return;
             }
         }
+
     }
 
-    if(!/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(_email.val())){
-        alert("Email not valid");
-        return;
-    }
 
     /* Pure Js
     if (_fName.value.trim() == "") {
@@ -86,5 +109,5 @@ var register = function () {
     }
     */
 
-    alert('Created succesfuyly;)');
+    //alert('Created succesfully;)');
 }
